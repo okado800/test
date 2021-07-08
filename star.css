@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+	margin: 0;
+}
+
+#night {
+	background-color: black;
+	height: 100vh;
+}
+
+.star {
+	position: absolute;
+	border-radius: 50%;
+	/*animation: ease 2s infinite shine;*/
+
+}
+
+@keyframes shine {
+	5% {
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(2);
+	}
+}
