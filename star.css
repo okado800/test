@@ -15,8 +15,6 @@ body {
 .star {
 	position: absolute;
 	border-radius: 50%;
-	/*animation: ease 2s infinite shine;*/
-
 }
 
 @keyframes shine {
