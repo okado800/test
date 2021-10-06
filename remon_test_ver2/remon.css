@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header{
+	height: 50px;
+	background-color:rgb(245, 164, 164)
+}
+main{
+	position: relative;
+	height: 5000px;
+	background-color: rgb(187, 228, 245);
+}
+
+img{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 282px;
+	height: 264px;
+}
+
+img:first-of-type{
+	top: 0px;
+	z-index: 5;
+}
+img:nth-of-type(2){
+	top: 500px;
+	z-index: 4;
+}
+img:nth-of-type(3){
+	top: 1000px;
+	z-index: 3;
+}
+img:nth-of-type(4){
+	top: 1500px;
+	z-index: 2;
+}
+img:nth-of-type(5){
+	top: 2000px;
+	z-index: 1;
+}
+/*擬似クラスを使用したときとセレクタの優先度が同じため必ず下部に書くこと*/
+img.active{
+	position: fixed;
+	top:0;
+}
+footer{
+	height: 50px;
+	background-color: rgb(132, 144, 250);
+}
